@@ -7,6 +7,7 @@ cover:
     - path: !!str
       size: !!int
   alt: !!str
+  border: !!boolean
   caption: >-
     !markdown
 tags: !!pairs
@@ -37,6 +38,7 @@ body: !!omap
       - path: !!str
         size: !!int
     alt: !!str
+    border: !!boolean
     prominence: !!str #option (small, medium, large) default medium
     caption: |-
       !markdown

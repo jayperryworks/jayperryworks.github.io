@@ -55,7 +55,7 @@
 				</p>
 			{/if}
 
-			{#if post.cover}
+			{#if post.cover && post.cover.sources}
 				<Cover
 					class="padding-top-wide"
 					sources={post.cover.sources}

@@ -90,7 +90,7 @@
 										href={post.path}
 										class="t-link-undecorated"
 									>
-										{#if post.cover}
+										{#if post.cover && post.cover.sources}
 											<div class="padding-bottom">
 												<Figure
 													sources={post.cover.sources}
