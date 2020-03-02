@@ -93,10 +93,7 @@
         </ul>
 
         <!-- small-screen menu -->
-        <Dropdown
-          label="Menu"
-          class="hide-above@small padding-top-narrow margin-left"
-        >
+        <Dropdown class="hide-above@small padding-top-narrow margin-left">
           <span
             slot="label"
             class="display-block t-scale-zeta"

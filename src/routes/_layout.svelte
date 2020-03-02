@@ -17,21 +17,34 @@
   	windowH = window.innerHeight
   }
 
+  function updateScrollPercentage () {
+		const weightedScrollPercentage = currentScrollPosition + ((currentScrollPosition / pageHeight) * windowH)
+  	scrollProgress = (weightedScrollPercentage / pageHeight) * 100
+  }
+
+  function throttle (callback) {
+  	if (!ticking) {
+  		window.requestAnimationFrame(() => {
+  			callback()
+  			ticking = false
+  		})
+
+	  	ticking = true
+  	}
+  }
+
   onMount(() => {
   	wrapperEl = document.getElementById('main-wrapper')
   	updatePageHeight()
 
   	window.addEventListener('scroll', (event) => {
-  		currentScrollPosition = window.scrollY + windowH
+  		currentScrollPosition = window.scrollY
+  		throttle(updateScrollPercentage)
+  	})
 
-  		if (!ticking) {
-  			window.requestAnimationFrame(() => {
-			  	scrollProgress = Math.ceil((currentScrollPosition / pageHeight) * 100)
-					ticking = false
-  			})
-
-  			ticking = true
-  		}
+  	window.addEventListener('resize', (event) => {
+  		currentScrollPosition = window.scrollY
+  		throttle(updateScrollPercentage)
   	})
 	})
   afterUpdate(updatePageHeight)
@@ -92,7 +105,10 @@
 
     &::before {
       background-color: color.get($bg-color);
-
+      background-image: linear-gradient(
+      	$progress-color var(--progress-height),
+      	color.get($bg-color) var(--progress-height)
+    	);
       bottom: 0;
       content: '';
       display: block;
@@ -101,14 +117,6 @@
       top: 0;
       width: border.width('frame');
       z-index: positioning.z('low');
-
-      @supports(background-image: linear-gradient($progress-color var(--progress-height), color.get($bg-color) var(--progress-height))) {
-    	  background-image: linear-gradient(
-    	  	$progress-color var(--progress-height),
-    	  	color.get($bg-color) var(--progress-height)
-    		);
-    		transition: all 0.25s ease-out;
-    	}
     }
 
     &.loading::before {
