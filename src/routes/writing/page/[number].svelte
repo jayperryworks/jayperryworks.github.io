@@ -1,14 +1,20 @@
 <script context="module">
-	export async function preload({ params, query }) {
-		const { number } = params
-		const response = await this.fetch(`writing/page/${number}.json`)
-		const data = await response.json()
+	import { total, pages } from '@/stores/writing.js'
 
-		return {
-			number,
-			total: data.totalPages,
-			posts: data.posts
+	export async function preload({ params, query }) {
+		if (!$pages.includes(number)) {
+			const { number } = params
+			const response = await this.fetch(`writing/page/${number}.json`)
+			const data = await response.json()
+
+			total.set(data.totalPosts)
+			pages.set([
+				data.posts,
+				...$pages
+			])
 		}
+
+		return { number }
 	}
 </script>
 
