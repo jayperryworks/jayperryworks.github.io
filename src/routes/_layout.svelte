@@ -44,7 +44,7 @@
 
   	window.addEventListener('resize', (event) => {
   		currentScrollPosition = window.scrollY
-  		throttle(updateScrollPercentage)
+  		throttle(updatePageHeight)
   	})
 	})
   afterUpdate(updatePageHeight)
