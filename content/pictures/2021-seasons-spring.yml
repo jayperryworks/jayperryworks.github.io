@@ -1,0 +1,34 @@
+title: Seasons (spring)
+date: 2021-01-02T02:30:00.263Z
+format: Digital print
+series: Seasons
+category: prints
+cover: /images/uploads/seasons-spring.tiff
+thumb: /images/uploads/seasons-thumb-spring.tiff
+editions:
+  - border: 2
+    photo: /images/uploads/seasons-spring-24x16.tiff
+    name: large
+    price: 85
+    type: giclee
+    url: https://www.etsy.com/listing/725274518/seasons-winter
+    width: 24
+    height: 16
+
+  - border: 1
+    photo: /images/uploads/seasons-spring-18x12.tiff
+    name: medium
+    price: 65
+    type: giclee
+    url: https://www.etsy.com/listing/725274518/seasons-winter
+    width: 18
+    height: 12
+
+  - border: 1
+    photo: /images/uploads/seasons-spring-12x8.tiff
+    name: small
+    price: 35
+    type: giclee
+    url: https://www.etsy.com/listing/725274518/seasons-winter
+    width: 12
+    height: 8

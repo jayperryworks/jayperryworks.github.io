@@ -3,11 +3,11 @@ date: 2019-09-24T02:30:00.263Z
 format: Digital print
 series: Seasons
 category: prints
-cover: /images/uploads/work-2019-seasons-winter.jpg
-thumb: /images/uploads/work-2019-seasons-winter-thumb.jpg
+cover: /images/uploads/seasons-winter.tiff
+thumb: /images/uploads/seasons-thumb-winter.tiff
 editions:
   - border: 2
-    photo: /images/uploads/work-2019-seasons-winter-large-DSCF0203.jpg
+    photo: /images/uploads/seasons-winter-24x16.tiff
     name: large
     price: 85
     type: giclee
@@ -16,7 +16,7 @@ editions:
     height: 16
 
   - border: 1
-    photo: /images/uploads/work-2019-seasons-winter-medium-DSCF0201.jpg
+    photo: /images/uploads/seasons-winter-18x12.tiff
     name: medium
     price: 65
     type: giclee
@@ -25,7 +25,7 @@ editions:
     height: 12
 
   - border: 1
-    photo: /images/uploads/work-2019-seasons-winter-small-DSCF0205.jpg
+    photo: /images/uploads/seasons-winter-12x8.tiff
     name: small
     price: 35
     type: giclee

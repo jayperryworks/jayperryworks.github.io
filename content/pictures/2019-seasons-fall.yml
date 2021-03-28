@@ -3,11 +3,11 @@ date: 2019-03-24T02:20:05.205Z
 format: Digital print
 series: Seasons
 category: prints
-cover: /images/uploads/work-2018-seasons-fall.jpg
-thumb: /images/uploads/work-2018-seasons-thumb.jpg
+cover: /images/uploads/seasons-fall.tiff
+thumb: /images/uploads/seasons-thumb-fall.jpeg
 editions:
-  - border: 1
-    photo: /images/uploads/seasons-fall-large.jpg
+  - border: 2
+    photo: /images/uploads/seasons-fall-24x16.tiff
     name: large
     price: 80
     type: giclee
@@ -16,7 +16,7 @@ editions:
     height: 16
 
   - border: 1
-    photo: /images/uploads/seasons-fall-medium.jpg
+    photo: /images/uploads/seasons-fall-18x12.jpg
     name: medium
     price: 55
     type: giclee
@@ -25,7 +25,7 @@ editions:
     height: 12
 
   - border: 1
-    photo: /images/uploads/seasons-fall-small.jpg
+    photo: /images/uploads/seasons-fall-12x8.jpg
     name: small
     price: 30
     type: giclee
