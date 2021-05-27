@@ -1,0 +1,13 @@
+title: The Citroën GS Birotor
+cover:
+  border: false
+  resize: false
+body:
+  - type: passage
+    useInExcerpt: false
+    markdown: "This [extremely rare, rotary-powered
+      Citroen](https://petrolicious.com/articles/an-afternoon-with-the-citroen-\
+      gs-birotor-a-wankel-powered-rarity-that-shouldnt-exist) combines my two
+      favorite kinds of automotive-design crazy: Citroen quirk (one-spoke
+      steering wheel, super weird suspension, black-swan-beautiful styling) with
+      Wankel engines."
